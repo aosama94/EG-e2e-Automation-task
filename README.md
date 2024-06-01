@@ -10,9 +10,9 @@ The Project has two main test specs:
 `npm i`
 
 ## Run tests
-run all specs headless
+run all specs headless  
 `npx cypress run`
-Open cypress runner in GUI mode
+Open cypress runner in GUI mode  
 `npx cypress open`
 
 > [!TIP]
