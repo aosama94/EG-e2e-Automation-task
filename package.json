@@ -1,14 +1,27 @@
 {
-  "name": "eg-e2e-automation-task",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "cypress": "^13.10.0"
-  }
+    "name": "eg-e2e-automation-task",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "headless": "cypress run",
+        "headed": "cypress open",
+        "oneFlow": "cypress run --spec 'cypress/e2e/eg-test-OneFlow.cy.js'",
+        "testElements": "cypress run --spec 'cypress/e2e/eg-testElements.cy.js'",
+        "e2e": "cypress run --env grepTags=e2e",
+        "dropdown": "cypress run --env grepTags=dropdown",
+        "upload": "cypress run --env grepTags=upload",
+        "openTab": "cypress run --env grepTags=openTab",
+        "alert": "cypress run --env grepTags=alert",
+        "hover": "cypress run --env grepTags=hover",
+        "iframe": "cypress run --env grepTags=iframe"
+
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@cypress/grep": "^4.0.1",
+        "cypress": "^13.10.0",
+        "prettier": "3.2.5"
+    }
 }
