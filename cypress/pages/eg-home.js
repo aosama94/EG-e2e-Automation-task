@@ -1,15 +1,23 @@
 export class Eg {
-    // Request creation page
     dropdown() {
         return cy.get('#dropdown-class-example');
+    }
+    selectedOption() {
+        return cy.get('#dropdown-class-example option:selected');
     }
 
     uploadFile() {
         return cy.get('input[type="file"][name="img"]');
     }
+    uploadedFile() {
+        return cy.get('input[type="file"][name="img"]+img');
+    }
 
     openNewTab() {
         return cy.get('button#opentab');
+    }
+    loginBtnInNewTab() {
+        return cy.get('[class="top-links"] li[class="login"]>a');
     }
 
     aleartText() {

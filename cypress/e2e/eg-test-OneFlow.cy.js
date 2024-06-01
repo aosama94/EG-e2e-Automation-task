@@ -1,14 +1,16 @@
 import { Eg } from '../pages/eg-home';
 
 const eg = new Eg();
-const testData = require('../fixtures/testData.json')
+const testData = require('../fixtures/testData.json');
 
 describe('Easy Generator e2e scenario', () => {
-    it('Cover all elements in one flow', { tags: 'e2e' }, () => {
+    before('Open the .html file', () => {
         cy.visit(Cypress.env('egFile'));
-
+    });
+    it('Cover all elements in one flow', { tags: 'e2e' }, () => {
         // Choose option1 from dropdown
         eg.dropdown().select('Option1');
+        eg.selectedOption().should('have.text', 'Option1');
 
         // Upload image
         cy.fixture('easygenerator.png', { encoding: null }).as('image');
@@ -24,6 +26,7 @@ describe('Easy Generator e2e scenario', () => {
             };
         });
         eg.openNewTab().click();
+        eg.loginBtnInNewTab().should('exist');
         cy.go(-1); //Back to the local file
 
         // Read text from .text file and type it into the alert/confirmation text field
@@ -36,6 +39,16 @@ describe('Easy Generator e2e scenario', () => {
             eg.aleartText().type(text)
         );
         eg.confirmation().click();
+
+        // Interact with hide button & show Btns
+        eg.hide().click();
+        eg.displayedText()
+            .should('have.attr', 'style')
+            .and('contains', 'display: none');
+        eg.show().click();
+        eg.displayedText()
+            .should('have.attr', 'style')
+            .and('contains', 'display: block');
 
         // Interact with hover button and its list
         eg.hoverBtn().trigger('mouseover');

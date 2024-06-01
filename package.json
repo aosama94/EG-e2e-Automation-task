@@ -13,9 +13,11 @@
         "upload": "cypress run --env grepTags=upload",
         "openTab": "cypress run --env grepTags=openTab",
         "alert": "cypress run --env grepTags=alert",
+        "hide": "cypress run --env grepTags=hide",
+        "show": "cypress run --env grepTags=show",
         "hover": "cypress run --env grepTags=hover",
-        "iframe": "cypress run --env grepTags=iframe"
-
+        "iframe": "cypress run --env grepTags=iframe",
+        "prettier": "prettier . --write"
     },
     "author": "",
     "license": "ISC",
