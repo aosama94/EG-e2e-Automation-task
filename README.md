@@ -26,9 +26,9 @@ Open cypress runner in GUI mode
 > [!NOTE]
 > "@cypress/grep" 3-rd party plugin used for running tests based on there tags or titles
 
+### Code formatting
 
-### Code formatting 
-- Use `npm run prettier` to format the code using prettier
+-   Use `npm run prettier` to format the code using prettier
 
 #### Sample run results
 
