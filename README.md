@@ -11,9 +11,9 @@ The Project has two main test specs:
 
 ## Run tests
 run all specs headless  
-`npx cypress run`
+`npx cypress run`  
 Open cypress runner in GUI mode  
-`npx cypress open`
+`npx cypress open`  
 
 > [!TIP]
 > Use scripts in backage.json to specify your run.
