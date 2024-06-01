@@ -30,4 +30,4 @@ Open cypress runner in GUI mode
 ### Code formatting 
 - Use `npm run prettier` to format the code using prettier
 
-cypress/fixtures/Screenshot 2024-06-01 at 6.08.17 PM.png
+<img width="724" alt="Screenshot 2024-06-01 at 6 08 17 PM" src="https://github.com/aosama94/EG-e2e-Automation-task/assets/104394313/d5811956-3f1f-4e46-b953-9b8c28fed83a">
