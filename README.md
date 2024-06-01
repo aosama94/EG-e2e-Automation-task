@@ -28,4 +28,4 @@ Open cypress runner in GUI mode
 
 
 ### Code formatting 
-- User `npm run prettier` to format the code using prettier
+- Use `npm run prettier` to format the code using prettier
