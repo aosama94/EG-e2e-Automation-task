@@ -4,6 +4,7 @@ const fs = require('fs');
 module.exports = defineConfig({
     viewportWidth: 1920,
     viewportHeight: 1080,
+    defaultCommandTimeout: 30000,
     chromeWebSecurity: false,
     env: {
         egFile: 'task.html',

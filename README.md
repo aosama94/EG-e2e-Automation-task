@@ -2,7 +2,7 @@
 
 The Project has two main test specs:
 
-1. Test the whole page components as a one scenario
+1. Test the whole page components as one scenario
 2. Test the elements separately
 
 ## Get started
@@ -29,3 +29,5 @@ Open cypress runner in GUI mode
 
 ### Code formatting 
 - Use `npm run prettier` to format the code using prettier
+
+cypress/fixtures/Screenshot 2024-06-01 at 6.08.17 PM.png
