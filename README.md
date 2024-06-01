@@ -1,5 +1,5 @@
 # EG-e2e-Automation-task
-The Project has to main test specs:
+The Project has two main test specs:
 1. Test the whole page components as a one scenario
 2. Test the elements separately
 
