@@ -16,7 +16,7 @@ Open cypress runner in GUI mode
 `npx cypress open`  
 
 > [!TIP]
-> Use scripts in backage.json to specify your run.
+> Use scripts in package.json to specify your run.
 ex. `npm run e2e`
 
 > [!NOTE]
